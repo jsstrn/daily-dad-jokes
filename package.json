@@ -5,8 +5,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "deploy": "sls deploy",
-    "deploy:dev": "sls deploy",
+    "deploy": "npm run deploy:dev",
+    "deploy:dev": "sls deploy --stage dev",
     "deploy:prod": "sls deploy --stage prod"
   },
   "dependencies": {
