@@ -1,0 +1,19 @@
+{
+  "name": "daily-dad-jokes",
+  "version": "1.0.0",
+  "description": "Broadcast a dad jokes to your Telegram channel",
+  "author": "",
+  "license": "MIT",
+  "scripts": {
+    "deploy": "sls deploy",
+    "deploy:dev": "sls deploy",
+    "deploy:prod": "sls deploy --stage prod"
+  },
+  "dependencies": {
+    "axios": "^0.21.1",
+    "telegraf": "^4.3.0"
+  },
+  "devDependencies": {
+    "serverless-dotenv-plugin": "^3.9.0"
+  }
+}
