@@ -16,5 +16,4 @@ functions:
   channelBroadcast:
     handler: index.run
     events:
-      # - schedule: cron(0 2 * * ? *)
-      - schedule: rate(2 minutes)
+      - schedule: cron(0 2 * * ? *)
