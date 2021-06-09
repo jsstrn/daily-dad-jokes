@@ -1,10 +1,10 @@
-const {jokesApiUrl} = require('./constants')
-const axios = require('axios')
+const { jokesApiUrl } = require("./constants");
+const axios = require("axios");
 
 const options = {
   headers: {
-    'User-Agent': 'Daily Dad Jokes (https://t.me/DailyDadJokes)',
-    'Accept': 'application/json',
+    "User-Agent": "Daily Dad Jokes (https://t.me/DailyDadJokes)",
+    Accept: "application/json",
   },
 };
 
@@ -13,10 +13,10 @@ const getJoke = async () => {
     const response = await axios.get(jokesApiUrl, options);
     return response.data.joke;
   } catch (error) {
-    console.error('[Error] Unable to get joke from API service', error)
+    console.error("[Error] Unable to get joke from API service", error);
   }
-}
+};
 
 module.exports = {
-  getJoke
-}
+  getJoke,
+};
