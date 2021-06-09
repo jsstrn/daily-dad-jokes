@@ -5,6 +5,8 @@
   "author": "",
   "license": "MIT",
   "scripts": {
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write .",
     "prune": "sls prune --number 4",
     "prune:dev": "npm run prune -- --stage dev",
     "prune:prod": "npm run prune -- --stage prod",
@@ -17,6 +19,7 @@
     "telegraf": "^4.3.0"
   },
   "devDependencies": {
+    "prettier": "2.3.1",
     "serverless-dotenv-plugin": "^3.9.0",
     "serverless-prune-plugin": "^1.5.0"
   }
