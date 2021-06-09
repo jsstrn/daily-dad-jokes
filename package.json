@@ -7,9 +7,7 @@
   "scripts": {
     "prune": "sls prune --number 3",
     "prune:dev": "npm run prune -- --stage dev",
-    "prune:dev:dryrun": "npm run prune:dev --dryRun",
     "prune:prod": "npm run prune -- --stage prod",
-    "prune:prod:dryrun": "npm run prune:prod --dryRun",
     "deploy": "sls deploy",
     "deploy:dev": "npm run prune:dev && npm run deploy --stage dev",
     "deploy:prod": "npm run prune:prod && npm run deploy --stage prod"
