@@ -1,7 +1,7 @@
 {
   "name": "daily-dad-jokes",
   "version": "1.0.0",
-  "description": "Broadcast a dad jokes to your Telegram channel",
+  "description": "Broadcast a dad joke to your Telegram channel",
   "author": "",
   "license": "MIT",
   "scripts": {
