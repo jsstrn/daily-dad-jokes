@@ -16,13 +16,13 @@ npm install
 
 ## Deployment 
 
-To deploy 
+To deploy (defaults to development stage)
 
 ```sh
 npm run deploy
 ```
 
-To set deployment stage 
+To deploy to production
 
 ```sh
 npm run deploy:prod
@@ -45,3 +45,6 @@ We use AWS EventBridge to trigger our functions. Note that AWS EventBridge does 
 ## Configure Serverless 
 
 To configure your Serverless project you need to include a `serverless.yml` file. For more information, see this [reference](https://www.serverless.com/framework/docs/providers/aws/guide/serverless.yml/).
+
+## Plugins for Serverless
+View all available [plugins](https://www.serverless.com/plugins/).
