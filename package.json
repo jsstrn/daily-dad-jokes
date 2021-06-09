@@ -5,7 +5,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "prune": "sls prune --number 3",
+    "prune": "sls prune --number 4",
     "prune:dev": "npm run prune -- --stage dev",
     "prune:prod": "npm run prune -- --stage prod",
     "deploy": "sls deploy",
