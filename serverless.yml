@@ -4,6 +4,7 @@ service: daily-dad-jokes
 frameworkVersion: '2'
 useDotenv: true
 plugins:
+  - serverless-prune-plugin
   - serverless-dotenv-plugin
 
 provider:
