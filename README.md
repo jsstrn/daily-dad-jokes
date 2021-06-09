@@ -48,3 +48,11 @@ To configure your Serverless project you need to include a `serverless.yml` file
 
 ## Plugins for Serverless
 View all available [plugins](https://www.serverless.com/plugins/).
+
+## Development checklist 
+
+- [x] Programmatically set environment variables 
+- [x] Prune older deployment versions
+- [x] Add Prettier code formatter
+- [ ] Rewrite code for TypeScript
+- [ ] Add TSLint
