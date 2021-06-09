@@ -11,8 +11,8 @@
     "prune:prod": "npm run prune -- --stage prod",
     "prune:prod:dryrun": "npm run prune:prod --dryRun",
     "deploy": "sls deploy",
-    "deploy:dev": "npm run deploy --stage dev",
-    "deploy:prod": "npm run deploy --stage prod"
+    "deploy:dev": "npm run prune:dev && npm run deploy --stage dev",
+    "deploy:prod": "npm run prune:prod && npm run deploy --stage prod"
   },
   "dependencies": {
     "axios": "^0.21.1",
