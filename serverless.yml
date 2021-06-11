@@ -3,6 +3,7 @@ app: daily-dad-jokes
 service: daily-dad-jokes
 frameworkVersion: "2"
 useDotenv: true
+
 plugins:
   - serverless-prune-plugin
   - serverless-dotenv-plugin
@@ -17,4 +18,8 @@ functions:
   channelBroadcast:
     handler: index.run
     events:
-      - schedule: cron(0 2 * * ? *)
+      - schedule:
+          name: once-every-day
+          description: "Scheduled for once every day at 2am GMT"
+          rate: cron(0 2 * * ? *)
+          enabled: true
