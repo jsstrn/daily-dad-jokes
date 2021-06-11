@@ -1,6 +1,6 @@
-const { telegram } = require("./src/bot");
-const { getJoke } = require("./src/jokes");
-const { telegramChannelName } = require("./src/constants");
+const { telegram } = require("./bot");
+const { getJoke } = require("./jokes");
+const { telegramChannelName } = require("./constants");
 
 module.exports.run = async (event, context, callback) => {
   try {

@@ -2,8 +2,9 @@
   "name": "daily-dad-jokes",
   "version": "1.0.0",
   "description": "Broadcast a dad joke to your Telegram channel",
-  "author": "",
+  "author": "Jesstern Rays <jsstrn@users.noreply.github.com>",
   "license": "MIT",
+  "private": true,
   "scripts": {
     "lint": "prettier --check .",
     "lint:fix": "prettier --write .",
@@ -21,6 +22,9 @@
   "devDependencies": {
     "prettier": "2.3.1",
     "serverless-dotenv-plugin": "^3.9.0",
-    "serverless-prune-plugin": "^1.5.0"
+    "serverless-prune-plugin": "^1.5.0",
+    "serverless-webpack": "^5.5.1",
+    "webpack": "^5.38.1",
+    "webpack-cli": "^4.7.2"
   }
 }

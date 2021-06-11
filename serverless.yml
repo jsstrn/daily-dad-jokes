@@ -7,6 +7,7 @@ useDotenv: true
 plugins:
   - serverless-prune-plugin
   - serverless-dotenv-plugin
+  - serverless-webpack
 
 provider:
   name: aws
@@ -16,7 +17,7 @@ provider:
 
 functions:
   channelBroadcast:
-    handler: index.run
+    handler: src/index.run
     events:
       - schedule:
           name: once-every-day
