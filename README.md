@@ -55,6 +55,7 @@ View all available [plugins](https://www.serverless.com/plugins/).
 - [x] Programmatically set environment variables
 - [x] Prune older deployment versions
 - [x] Add Prettier code formatter
+- [x] Use different schedules for each stage
 - [ ] Add Webpack
 - [ ] Rewrite code for TypeScript
 - [ ] Add TSLint

@@ -22,4 +22,9 @@ functions:
           name: once-every-day
           description: "Scheduled for once every day at 2am GMT"
           rate: cron(0 2 * * ? *)
-          enabled: true
+          enabled: ${env:SCHEDULE_EVERY_DAY}
+      - schedule:
+          name: once-every-minute
+          description: "Scheduled for once every minute"
+          rate: rate(1 minute)
+          enabled: ${env:SCHEDULE_EVERY_MIN}
