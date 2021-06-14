@@ -1,6 +1,6 @@
 const { telegram } = require("../bot");
 
-getWebhook = async () => {
+const getWebhook = async () => {
   try {
     const webhook = await telegram.getWebhookInfo();
 

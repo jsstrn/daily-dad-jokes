@@ -1,6 +1,6 @@
 const { telegraf } = require("../bot");
 
-handleBotRequests = async (event) => {
+const handleBotRequests = async (event) => {
   try {
     await telegraf.handleUpdate(JSON.parse(event.body));
 

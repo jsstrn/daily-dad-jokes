@@ -2,7 +2,7 @@ const { telegram } = require("../bot");
 const { getJoke } = require("../helpers/joke");
 const { telegramChannelName } = require("../constants");
 
-broadcastToChannel = async () => {
+const broadcastToChannel = async () => {
   try {
     const joke = await getJoke();
     const message = `${joke}\n\n➡️  ${telegramChannelName}`;
