@@ -17,7 +17,7 @@
     "prune:prod": "npm run prune -- --stage prod",
     "deploy": "sls deploy",
     "deploy:dev": "npm run prune:dev && npm run deploy -- --stage dev",
-    "deploy:prod": "npm run remove:dev && npm run prune:prod && npm run deploy -- --stage prod",
+    "deploy:prod": "npm run prune:prod && npm run deploy -- --stage prod",
     "remove:dev": "sls remove --stage dev"
   },
   "dependencies": {
