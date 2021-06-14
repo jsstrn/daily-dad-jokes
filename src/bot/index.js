@@ -1,5 +1,5 @@
 const { Telegraf, Telegram } = require("telegraf");
-const { telegramBotToken } = require("./constants");
+const { telegramBotToken } = require("../constants");
 const { getJoke } = require("../helpers/joke");
 
 if (!telegramBotToken) {
