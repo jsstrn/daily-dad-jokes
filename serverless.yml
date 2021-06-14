@@ -16,8 +16,29 @@ provider:
   lambdaHashingVersion: 20201221
 
 functions:
+  setWebhook:
+    handler: src/functions/index.setWebhook
+    events:
+      - http:
+          path: set-webhook
+          method: get
+
+  getWebhook:
+    handler: src/functions/index.getWebhook
+    events:
+      - http:
+          path: get-webhook
+          method: get
+
+  handleBotRequests:
+    handler: src/functions/index.handleBotRequests
+    events:
+      - http:
+          path: handleBotRequests
+          method: post
+
   broadcastToChannel:
-    handler: src/index.broadcastToChannel
+    handler: src/functions/index.broadcastToChannel
     events:
       - schedule:
           name: ${self:app}-${opt:stage}-once-every-day

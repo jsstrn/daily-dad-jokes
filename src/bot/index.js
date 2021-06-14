@@ -1,6 +1,6 @@
 const { Telegraf, Telegram } = require("telegraf");
 const { telegramBotToken } = require("./constants");
-const { getJoke } = require("./jokes");
+const { getJoke } = require("../helpers/joke");
 
 if (!telegramBotToken) {
   throw new Error("[ERROR] Telegram bot token is required.");
