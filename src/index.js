@@ -2,7 +2,7 @@ const { telegram } = require("./bot");
 const { getJoke } = require("./jokes");
 const { telegramChannelName } = require("./constants");
 
-module.exports.run = async (event, context, callback) => {
+module.exports.broadcastToChannel = async (event, context, callback) => {
   try {
     const joke = await getJoke();
     const message = `${joke}\n\n➡️  ${telegramChannelName}`;

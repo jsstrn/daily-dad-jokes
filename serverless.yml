@@ -16,8 +16,8 @@ provider:
   lambdaHashingVersion: 20201221
 
 functions:
-  channelBroadcast:
-    handler: src/index.run
+  broadcastToChannel:
+    handler: src/index.broadcastToChannel
     events:
       - schedule:
           name: ${self:app}-${opt:stage}-once-every-day
