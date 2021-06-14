@@ -57,6 +57,6 @@ View all available [plugins](https://www.serverless.com/plugins/).
 - [x] Add Prettier code formatter
 - [x] Use different schedules for each stage
 - [x] Add Webpack
-- [ ] Add ESLint
+- [x] Add ESLint
 - [ ] Rewrite code for TypeScript
 - [ ] Add TSLint
