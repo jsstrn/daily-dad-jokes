@@ -9,7 +9,7 @@ if (!telegramBotToken) {
 const telegraf = new Telegraf(telegramBotToken);
 const telegram = new Telegram(telegramBotToken);
 
-commands(telegraf).startCommand().helpCommand().jokeCommand();
+commands.init(telegraf).startCommand().helpCommand().jokeCommand();
 
 module.exports = {
   telegraf,

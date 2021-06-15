@@ -6,6 +6,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
     "eslint": "eslint .",
     "eslint:fix": "npm run eslint -- --fix",
     "yamllint": "yamllint *.yml",
@@ -28,6 +30,7 @@
   "devDependencies": {
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.4",
     "prettier": "2.3.1",
     "serverless-dotenv-plugin": "^3.9.0",
     "serverless-prune-plugin": "^1.5.0",
