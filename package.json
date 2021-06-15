@@ -8,9 +8,10 @@
   "scripts": {
     "eslint": "eslint .",
     "eslint:fix": "npm run eslint -- --fix",
+    "yamllint": "yamllint *.yml",
     "prettier": "prettier --check .",
     "prettier:fix": "prettier --write .",
-    "lint": "npm run prettier && npm run eslint",
+    "lint": "npm run prettier && npm run yamllint && npm run eslint",
     "lint:fix": "npm run prettier:fix && npm run eslint:fix",
     "prune": "sls prune --number 2",
     "prune:dev": "npm run prune -- --stage dev",
@@ -32,6 +33,7 @@
     "serverless-prune-plugin": "^1.5.0",
     "serverless-webpack": "^5.5.1",
     "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.2"
+    "webpack-cli": "^4.7.2",
+    "yaml-lint": "^1.2.4"
   }
 }
