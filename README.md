@@ -38,6 +38,10 @@ For production, create a `env.prod` file and add your environment variables.
 
 Environment variables are handled by [serverless-dotenv-plugin](https://github.com/neverendingqs/serverless-dotenv-plugin). See [example](https://github.com/neverendingqs/serverless-dotenv-plugin/tree/master/examples/simple-express-app) usage.
 
+### Webhooks
+
+When we first deploy to an environment, we must setup a webhook so that Telegram knows where to send bot requests to. This is a one time setup.
+
 ## Scheduling
 
 We use AWS EventBridge to trigger our functions. Note that AWS EventBridge does not use the standard cron format so you cannot rely on online cron editors. Instead refer to their documentation for [cron and rate expressions](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule-schedule.html).
