@@ -1,10 +1,10 @@
 const telegram = require("../bot");
-const handleBotRequests = require('./handleBotRequests')
+const handleBotRequests = require("./handleBotRequests");
 
 const setWebhook = async (event) => {
   try {
     const { domainName, stage } = event.requestContext;
-    const handler = handleBotRequests.name
+    const handler = handleBotRequests.name;
     const url = `${domainName}/${stage}/${handler}`;
 
     await telegram.setWebhook(url);

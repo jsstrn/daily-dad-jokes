@@ -1,9 +1,10 @@
 const { jokesApiUrl } = require("../constants");
 const axios = require("axios");
+const { telegramChannelName, telegramChannelUrl } = require("../constants");
 
 const options = {
   headers: {
-    "User-Agent": "Daily Dad Jokes (https://t.me/DailyDadJokes)",
+    "User-Agent": `${telegramChannelName} (${telegramChannelUrl})`,
     Accept: "application/json",
   },
 };

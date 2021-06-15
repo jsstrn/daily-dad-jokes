@@ -1,13 +1,13 @@
 const { telegram } = require("../bot");
 const { getJoke } = require("../helpers/joke");
-const { telegramChannelName } = require("../constants");
+const { telegramChannelId } = require("../constants");
 
 const broadcastToChannel = async () => {
   try {
     const joke = await getJoke();
-    const message = `${joke}\n\n➡️  ${telegramChannelName}`;
+    const message = `${joke}\n\n➡️  ${telegramChannelId}`;
 
-    await telegram.sendMessage(telegramChannelName, message);
+    await telegram.sendMessage(telegramChannelId, message);
 
     return Promise.resolve({
       statusCode: 200,
