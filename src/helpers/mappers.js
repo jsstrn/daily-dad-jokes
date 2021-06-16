@@ -3,8 +3,7 @@ module.exports.mapResultsToAnswerInlineQuery = (results) => {
     id,
     title: joke,
     type: "article",
-    thumb_url:
-      "https://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Emotes-face-laugh-icon.png",
+    thumb_url: "https://i.imgur.com/NIaJGyw.png",
     input_message_content: {
       message_text: joke,
     },
