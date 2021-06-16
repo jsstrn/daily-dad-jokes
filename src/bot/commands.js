@@ -1,4 +1,8 @@
-const { getJoke } = require("../helpers/joke");
+const {
+  getJoke,
+  searchJoke,
+  mapResultsToAnswerInlineQuery,
+} = require("../helpers");
 
 class Commands {
   constructor(bot) {
@@ -35,6 +39,21 @@ class Commands {
 
     return this;
   }
+
+  handleInlineQuery() {
+    this.bot.on("inline_query", async (ctx) => {
+      const query = ctx.inlineQuery.query;
+      const results = await searchJoke(query);
+      const answers = mapResultsToAnswerInlineQuery(results);
+
+      await ctx.answerInlineQuery(answers);
+    });
+
+    return this;
+  }
 }
 
-module.exports = new Commands();
+module.exports = {
+  Commands,
+  commands: new Commands(),
+};
